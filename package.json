@@ -1,0 +1,28 @@
+{
+  "name": "down4-social-network",
+  "version": "1.0.0",
+  "description": "down4 social networking",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walterlaw19/Down4-social-network.git"
+  },
+  "keywords": [
+    "social",
+    "mingle"
+  ],
+  "author": "wg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/walterlaw19/Down4-social-network/issues"
+  },
+  "homepage": "https://github.com/walterlaw19/Down4-social-network#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.11"
+  }
+}
