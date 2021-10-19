@@ -1,28 +1,28 @@
 const router = require('express').Router();
 
 const {
-    getAllUser,
-    getUsedById,
-    createUser,
-    updateUser,
-    deleteUser,
-} = require('../../controllers/comment-controller');
+    getAllThought,
+    getThoughtById,
+    createThought,
+    updateThought,
+    deleteThought,
+} = require('../../controllers/thought-controller.js');
 
-// /api/comments/<pizzaId>
+// /api/thoughts/<userId>
 
 router.route('/')
-    .get(getAllUser)
+    .get(getAllThought)
     // .get()
-    .post(createUser)
+    .post(createThought)
 
 
 
 router.route('/:id')
-    .get(getUsedById)
-    .put(updateUser)
-    .delete(deleteUser)
+    .get(getThoughtById)
+    .put(updateThought)
+    .delete(deleteThought)
 
-router.route('/:userId/friends/:friendId')
+router.route('/:ThoughtId/friends/:friendId')
     .post()
     .delete()
 

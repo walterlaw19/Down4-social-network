@@ -6,9 +6,9 @@ const {
     createUser,
     updateUser,
     deleteUser,
-} = require('../../controllers/comment-controller');
+} = require('../../controllers/user-controller.js');
 
-// /api/comments/<pizzaId>
+// /api/users/<pizzaId>
 
 router.route('/')
     .get(getAllUser)

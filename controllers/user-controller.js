@@ -1,6 +1,5 @@
 const { User } = require('../models')
 
-
 const userController = {
     // get all User
     getAllUser(req, res) {
