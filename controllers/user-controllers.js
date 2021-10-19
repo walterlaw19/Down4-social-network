@@ -75,9 +75,6 @@ const userController = {
     // delete friends
 
 
-
-
-
 };
 
 
