@@ -1,6 +1,62 @@
 const { User, Thought } = require('../models');
 
 const thoughtController = {
+
+    getAllThought(req, res) {
+        Thought.findAll({})
+
+            // is this needed?
+            .populate({
+                path: 'reactions',
+                select: '-__v'
+            })
+            .select('-__v')
+            .sort({ _id: -1 })
+
+            // is this needed?
+
+            .then(dbThoughtData => res.json(dbThoughtData))
+            .catch(err => {
+                console.log(err);
+                res.status(400).json(err);
+            });
+    },
+
+    getThoughtById({ params }, res) {
+        Thought.findOne({ _id: params._id })
+
+            // is this needed?
+            .populate({
+                path: 'reactions',
+                select: '-__v'
+            })
+            .select('-__v')
+            .sort({ _id: -1 })
+
+            // is this needed?
+            .then(dbThoughtData => res.json(dbThoughtData))
+            .catch(err => {
+                console.log(err);
+                res.status(400).json(err);
+            });
+
+
+    },
+
+    createThought({ }) {
+
+    },
+
+    updateThought() {
+
+    },
+
+    deleteThought() {
+
+    },
+
+
+
     // add thought to User
     addThought({ params, body }, res) {
         console.log(params);
