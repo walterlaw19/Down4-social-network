@@ -1,8 +1,8 @@
 const router = require('express').Router();
 const users = require('./users');
-// const pizzaRoutes = require('./pizza-routes');
+const thoughts = require('./thoughts');
 
 router.use('/users', users);
-// router.use('/pizzas', pizzaRoutes);
+router.use('/thoughts', thoughts);
 
 module.exports = router;

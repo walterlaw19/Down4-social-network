@@ -6,6 +6,8 @@ const {
     createUser,
     updateUser,
     deleteUser,
+    addFriend,
+    deleteFriend,
 } = require('../../controllers/user-controller.js');
 
 // /api/users/<pizzaId>
@@ -23,8 +25,8 @@ router.route('/:id')
     .delete(deleteUser)
 
 router.route('/:userId/friends/:friendId')
-    .post()
-    .delete()
+    .post(addFriend)
+    .delete(deleteFriend)
 
 
 

@@ -22,9 +22,9 @@ router.route('/:id')
     .put(updateThought)
     .delete(deleteThought)
 
-router.route('/:ThoughtId/friends/:friendId')
-    .post()
-    .delete()
+// router.route('/:thoughtId')
+//     .post()
+//     .delete()
 
 
 
