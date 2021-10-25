@@ -25,6 +25,7 @@ Time to mingle virtually
 https://www.mongodb.com/try/download/community
 
 Guide for Windows: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
+
 Guide for Mac: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
 
 3. copy or clone this repo into the folder where you want the application to be created by entering the following command in your terminal (mac) or gitbash (windows):
