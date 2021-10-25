@@ -9,8 +9,8 @@ Time to mingle virtually
 ## Table of Contents
 
 * [Installation](#installation)
-* [Demo](#demo)
-* [Deployment](#deployment)
+* [Demo-video](#demo-video)
+* [Screenshots](#screenshots)
 * [Usage](#usage)
 * [License](#license)
 * [Contribution](#contribution)
@@ -29,58 +29,38 @@ Guide for Windows: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-w
 Guide for Mac: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
 
 3. copy or clone this repo into the folder where you want the application to be created by entering the following command in your terminal (mac) or gitbash (windows):
-    * git clone git@github.com:walterlaw19/e-commerce-industry.git   (<---- Copy, Paste, Enter this command in your terminal)
+    * git clone git@github.com:walterlaw19/Down4-social-network.git   (<---- Copy, Paste, Enter this command in your terminal)
 
-4. Open the e-commerce-industry folder from your your VS Code (make sure you are in the right folder) or you can use the integrated terminal, go to the directory where the e-commerce-industry folder was installed: e.g. "cd e-commerce-industry"
+4. Open the down4 folder from your your VS Code (make sure you are in the right folder) or you can use the integrated terminal, go to the directory where the down4 folder was installed: e.g. "cd down4"
 
-5. Once you are in the e-commerce-industry folder, open a new file where you will put your credentials.  In the terminal type: 'touch .env'  Then navigate to .env file and open it and put this information 
+5. Once you are in the down4 folder, open your integrated terminal in VS Code and install the dependencies by entering the command: 'npm i'.  Wait for the installation to be completed.
 
-```
-DB_NAME='ecommerce_db'
-DB_USER='root'
-DB_PW='ThisIsMySQLPW'
-```
+7. After the installation has be completed, type "npm start" to run the application.
 
-*** You should enter your SQL username in DB_USER and your SQL password in DB_PW. Save the changes.
-
-6. Back in the e-commerce-industry root directory, open your integrated terminal in VS Code and install the dependencies by entering the command: 'npm i'.  Wait for the installation to be completed.
-
-7. After the installation has be completed, you must login to MySQL shell. Enter "msyql -u 'your SQL username' -p" and press Enter. Now you will be prompted to enter your SQL Password. Once you are logged in, enter the following commands in this order to clear/seed the MySQL database properly. 
+8. Use Insomnia to get all users, tags and produce using the correct path
 
 ```
-A. source db/schema.sql
-B. quit
-```
-8. First we must seed the database by entering the following command in the terminal: "npm run seed"
-
-8. Once this is done, type "npm start" to run the application.
-
-7. Use Insomnia to get all categories, tags and produces using the correct path
-
-```
-http://localhost:3001/api/products        http://localhost:3001/api/categories         http://localhost:3001/api/tags
+http://localhost:3001/api/users        http://localhost:3001/api/thoughts         
 ```
 
 9. Once you are done, you can press CTRL + C in the terminal to stop the application.
 
 
 
-## Demo
+## Demo-video
+
+[Click here to see a demo video](https://drive.google.com/file/d/1dIfcfgTnUDxf0MCZ51_2RqQ4X1D25Bxg/view?usp=sharing)
+
+## Screenshots
 
 ![](Readme-images/screenshot1.PNG) "GET All Users"
 ![](Readme-images/screenshot2.PNG) "GET All Thoughts"
 ![](Readme-images/screenshot3.PNG) "ADD a Reaction"
 ![](Readme-images/screenshot4.PNG) "DELETE a User"
 
-
-## Deployment
-
-click here to view the application:
-<!-- https://walt-first-tech-blog.herokuapp.com/ -->  ENTER NEW VIDEO LINK
-
 ## Usage
 
-You can use this application to network
+You can use this application to create your own social network to rival all powerful Feisbuk and strip them down from its glory.
  
 ## License
 
